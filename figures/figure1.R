@@ -1,35 +1,12 @@
----
-title: "rseminar"
-format: html
-editor: visual
-editor_options: 
-  chunk_output_type: console
----
 
-## R Seminar
 
-git add . / git commit -m "bla" / git push
-
-ggplot: alles ist möglich, erst punkte, dann achsen, dann bezeichnungen
-
-in der top kann man bibliography haben
-
-VO~2max~
-
-This is a \[\^footnote\]
-
-\|\> is a pipe operator and means then do and takes the result of the previous thing as the first argument
-
-```{r}
 
 library(tidyverse)
 library(exscidata)
 library(dplyr)
+library (ggplot2)
 
 remotes::install_github("dhammarstrom/exscidata")
-```
-
-```{r}
 
 dxadata <- data.frame(lean.mass = rnorm(100, 6000, 100))
 
@@ -41,10 +18,6 @@ exscidata::dxadata |> select(participant)
 
 exscidata::dxadata |>
   lm(weight ~ height, data = _)
-
-```
-
-```{r}
 
 glimpse(exscidata::dxadata)
 
@@ -62,25 +35,15 @@ exscidata::dxadata |>
   rename(kg = weight) |>
   relocate(kg, .before = participant)
 
-
-```
-
-```{r}
-
 ## Mutate
 lean_mass <- exscidata::dxadata %>%
   select(participant:weight, lean.whole) |>
-
-
-  mutate(rel_lean = 100 * ((lean.whole/1000)/weight),
-    anewvariable = rnorm(80, 0, 1)) |>
-  print()
   
-```
+  
+  mutate(rel_lean = 100 * ((lean.whole/1000)/weight),
+         anewvariable = rnorm(80, 0, 1)) |>
+  print()
 
-## Pivot data
-
-```{r}
 
 ## Create a small data set containing volume/leg information
 leg_volume <- exscidata::dxadata |>
@@ -109,10 +72,6 @@ lean_mass <- exscidata::dxadata |>
 
 lean_mass <- full_join(leg_volume, lean_mass)
 
-```
-
-```{r}
-
 lean_mass |>
   filter(include == "incl") |>
   print()
@@ -122,22 +81,17 @@ lean_mass |>
 lean_mass |>
   group_by(time)
 
-
-```
-
-```{r}
-
 lean_mass |>
   filter(include == "incl") |>
   group_by(time, volume) |>
   summarise(Median = median(leanmass))
-  
-  print()
-  
-  
-lean_mass |>
-  filter(include == "incl") |>
 
+print()
+
+
+lean_mass_sum <- lean_mass |>
+  filter(include == "incl") |>
+  
   summarise(Median = median(leanmass),
             Mean =mean(leanmass),
             SD = sd(leanmass),
@@ -149,4 +103,20 @@ lean_mass |>
             .by = c(time, volume)) |>
   
   print()
-```
+
+
+p <- ggplot(data = lean_mass_sum,
+            aes(time, Median, color = volume)) +
+  geom_point() +
+  geom_point(aes(y = Mean), shape = 21)
+
+
+
+
+## am einfachsten direkt in der PDF die veränderungen zu sehen
+
+ggsave("figures/lean_mass.pdf",
+       p,
+       width = 8.9,
+       height = 8.9,
+       units = "cm")

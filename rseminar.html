@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>rseminar</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="rseminar_files/libs/clipboard/clipboard.min.js"></script>
+<script src="rseminar_files/libs/quarto-html/quarto.js"></script>
+<script src="rseminar_files/libs/quarto-html/popper.min.js"></script>
+<script src="rseminar_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="rseminar_files/libs/quarto-html/anchor.min.js"></script>
+<link href="rseminar_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="rseminar_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="rseminar_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="rseminar_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="rseminar_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">rseminar</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="r-seminar" class="level2">
+<h2 class="anchored" data-anchor-id="r-seminar">R Seminar</h2>
+<p>git add . / git commit -m “bla” / git push</p>
+<p>ggplot: alles ist möglich, erst punkte, dann achsen, dann bezeichnungen</p>
+<p>in der top kann man bibliography haben</p>
+<p>VO<sub>2max</sub></p>
+<p>This is a [^footnote]</p>
+<p>|&gt; is a pipe operator and means then do and takes the result of the previous thing as the first argument</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.3     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.3     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.0
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(exscidata)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"dhammarstrom/exscidata"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Skipping install of 'exscidata' from a github remote, the SHA1 (f70efb3a) has not changed since last install.
+  Use `force = TRUE` to force installation</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>dxadata <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">lean.mass =</span> <span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="dv">6000</span>, <span class="dv">100</span>))</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="do">## Base R forward pipe operator</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>exscidata<span class="sc">::</span>dxadata <span class="sc">|&gt;</span> <span class="fu">select</span>(participant)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 80 × 1
+   participant
+   &lt;chr&gt;      
+ 1 FP28       
+ 2 FP40       
+ 3 FP21       
+ 4 FP34       
+ 5 FP23       
+ 6 FP26       
+ 7 FP36       
+ 8 FP38       
+ 9 FP25       
+10 FP19       
+# ℹ 70 more rows</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="do">## when they differ</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>exscidata<span class="sc">::</span>dxadata <span class="sc">|&gt;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lm</span>(weight <span class="sc">~</span> height, <span class="at">data =</span> _)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = weight ~ height, data = exscidata::dxadata)
+
+Coefficients:
+(Intercept)       height  
+   -95.5109       0.9535  </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(exscidata<span class="sc">::</span>dxadata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 80
+Columns: 59
+$ participant      &lt;chr&gt; "FP28", "FP40", "FP21", "FP34", "FP23", "FP26", "FP36…
+$ time             &lt;chr&gt; "pre", "pre", "pre", "pre", "pre", "pre", "pre", "pre…
+$ multiple         &lt;chr&gt; "L", "R", "R", "R", "R", "R", "L", "R", "R", "L", "L"…
+$ single           &lt;chr&gt; "R", "L", "L", "L", "L", "L", "R", "L", "L", "R", "R"…
+$ sex              &lt;chr&gt; "female", "female", "male", "female", "male", "female…
+$ include          &lt;chr&gt; "incl", "incl", "incl", "incl", "incl", "excl", "incl…
+$ age              &lt;dbl&gt; 24.5, 22.1, 26.8, 23.1, 24.8, 24.2, 20.5, 20.6, 37.4,…
+$ height           &lt;dbl&gt; 170.0, 175.0, 184.0, 164.0, 176.5, 163.0, 158.0, 181.…
+$ weight           &lt;dbl&gt; 66.5, 64.0, 85.0, 53.0, 68.5, 56.0, 60.5, 83.5, 65.0,…
+$ BMD.head         &lt;dbl&gt; 2.477, 1.916, 2.306, 2.163, 2.108, 2.866, 1.849, 2.21…
+$ BMD.arms         &lt;dbl&gt; 0.952, 0.815, 0.980, 0.876, 0.917, 0.973, 0.871, 0.91…
+$ BMD.legs         &lt;dbl&gt; 1.430, 1.218, 1.598, 1.256, 1.402, 1.488, 1.372, 1.42…
+$ BMD.body         &lt;dbl&gt; 1.044, 0.860, 1.060, 0.842, 0.925, 0.984, 0.923, 1.01…
+$ BMD.ribs         &lt;dbl&gt; 0.770, 0.630, 0.765, 0.636, 0.721, 0.737, 0.648, 0.70…
+$ BMD.pelvis       &lt;dbl&gt; 1.252, 1.078, 1.314, 1.044, 1.154, 1.221, 1.194, 1.32…
+$ BMD.spine        &lt;dbl&gt; 1.316, 0.979, 1.293, 0.899, 1.047, 1.089, 1.006, 1.14…
+$ BMD.whole        &lt;dbl&gt; 1.268, 1.082, 1.325, 1.119, 1.181, 1.350, 1.166, 1.24…
+$ fat.left_arm     &lt;dbl&gt; 1168, 715, 871, 610, 788, 372, 932, 1312, 388, 668, 5…
+$ fat.left_leg     &lt;dbl&gt; 4469, 4696, 3467, 3023, 3088, 2100, 4674, 5435, 1873,…
+$ fat.left_body    &lt;dbl&gt; 6280, 4061, 7740, 3638, 6018, 2328, 4896, 9352, 2921,…
+$ fat.left_whole   &lt;dbl&gt; 12365, 9846, 12518, 7565, 10259, 5048, 10736, 16499, …
+$ fat.right_arm    &lt;dbl&gt; 1205, 769, 871, 610, 741, 374, 940, 1292, 413, 716, 5…
+$ fat.right_leg    &lt;dbl&gt; 4497, 4900, 3444, 3017, 3254, 2082, 4756, 5455, 1782,…
+$ fat.right_body   &lt;dbl&gt; 6082, 3923, 8172, 3602, 5699, 2144, 4705, 8674, 2640,…
+$ fat.right_whole  &lt;dbl&gt; 12102, 9862, 12856, 7479, 10020, 4821, 10806, 15876, …
+$ fat.arms         &lt;dbl&gt; 2373, 1484, 1742, 1220, 1529, 747, 1872, 2604, 802, 1…
+$ fat.legs         &lt;dbl&gt; 8965, 9596, 6911, 6040, 6342, 4182, 9430, 10890, 3655…
+$ fat.body         &lt;dbl&gt; 12362, 7984, 15912, 7239, 11717, 4472, 9601, 18026, 5…
+$ fat.android      &lt;dbl&gt; 1880, 963, 2460, 1203, 1933, 527, 1663, 3183, 1240, 1…
+$ fat.gynoid       &lt;dbl&gt; 5064, 5032, 4779, 3739, 4087, 2740, 5217, 6278, 2309,…
+$ fat.whole        &lt;dbl&gt; 24467, 19708, 25374, 15044, 20278, 9869, 21542, 32375…
+$ lean.left_arm    &lt;dbl&gt; 1987, 1931, 2884, 1753, 2652, 2425, 1913, 2266, 3066,…
+$ lean.left_leg    &lt;dbl&gt; 7059, 7190, 10281, 6014, 8242, 7903, 6829, 8889, 9664…
+$ lean.left_body   &lt;dbl&gt; 9516, 10693, 13847, 9736, 11387, 10573, 8954, 11482, …
+$ lean.left_whole  &lt;dbl&gt; 20305, 21778, 29332, 19143, 24185, 22946, 18809, 2431…
+$ lean.right_arm   &lt;dbl&gt; 2049, 2081, 2888, 1754, 2487, 2439, 1930, 2236, 3253,…
+$ lean.right_leg   &lt;dbl&gt; 7104, 7506, 10200, 6009, 8685, 7841, 6950, 8923, 9198…
+$ lean.right_body  &lt;dbl&gt; 9199, 10304, 14593, 9636, 10779, 9733, 8602, 10672, 1…
+$ lean.right_whole &lt;dbl&gt; 19605, 21310, 29643, 18792, 23653, 21837, 19407, 2372…
+$ lean.arms        &lt;dbl&gt; 4036, 4012, 5773, 3508, 5139, 4864, 3843, 4501, 6319,…
+$ lean.legs        &lt;dbl&gt; 14163, 14696, 20482, 12023, 16928, 15744, 13779, 1781…
+$ lean.body        &lt;dbl&gt; 18715, 20998, 28440, 19372, 22166, 20306, 17556, 2215…
+$ lean.android     &lt;dbl&gt; 2669, 2782, 3810, 2455, 2904, 2656, 2297, 3094, 3344,…
+$ lean.gynoid      &lt;dbl&gt; 6219, 7209, 10233, 5866, 7525, 5970, 5825, 8175, 7760…
+$ lean.whole       &lt;dbl&gt; 39910, 43088, 58976, 37934, 47837, 44783, 38216, 4804…
+$ BMC.left_arm     &lt;dbl&gt; 181, 138, 204, 144, 180, 173, 140, 173, 220, 226, 225…
+$ BMC.left_leg     &lt;dbl&gt; 567, 508, 728, 441, 562, 574, 482, 631, 633, 630, 672…
+$ BMC.left_body    &lt;dbl&gt; 622, 414, 696, 367, 526, 465, 370, 629, 473, 629, 509…
+$ BMC.left_whole   &lt;dbl&gt; 1680, 1321, 1945, 1201, 1527, 1580, 1131, 1688, 1544,…
+$ BMC.right_arm    &lt;dbl&gt; 198, 150, 210, 142, 176, 183, 140, 176, 224, 251, 226…
+$ BMC.right_leg    &lt;dbl&gt; 574, 514, 739, 431, 552, 565, 491, 641, 622, 636, 690…
+$ BMC.right_body   &lt;dbl&gt; 592, 428, 730, 351, 502, 409, 358, 582, 420, 616, 483…
+$ BMC.right_whole  &lt;dbl&gt; 1582, 1288, 1958, 1130, 1451, 1466, 1229, 1668, 1478,…
+$ BMC.arms         &lt;dbl&gt; 379, 288, 414, 285, 356, 357, 280, 348, 444, 478, 451…
+$ BMC.legs         &lt;dbl&gt; 1142, 1022, 1467, 872, 1115, 1139, 974, 1272, 1255, 1…
+$ BMC.body         &lt;dbl&gt; 1214, 842, 1426, 718, 1028, 874, 728, 1211, 893, 1245…
+$ BMC.android      &lt;dbl&gt; 80, 57, 90, 44, 56, 54, 43, 77, 52, 72, 59, 60, 65, 5…
+$ BMC.gynoid       &lt;dbl&gt; 314, 285, 427, 245, 299, 262, 241, 379, 335, 378, 332…
+$ BMC.whole        &lt;dbl&gt; 3261, 2609, 3903, 2331, 2978, 3046, 2360, 3356, 3022,…</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="do">## variablen finden in tidy select</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>exscidata<span class="sc">::</span>dxadata <span class="sc">|&gt;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(participant<span class="sc">:</span>weight, <span class="fu">starts_with</span>(<span class="st">"lean."</span>) <span class="sc">&amp;</span> <span class="fu">contains</span>(<span class="st">"_leg"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 80 × 11
+   participant time  multiple single sex    include   age height weight
+   &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+ 1 FP28        pre   L        R      female incl     24.5   170    66.5
+ 2 FP40        pre   R        L      female incl     22.1   175    64  
+ 3 FP21        pre   R        L      male   incl     26.8   184    85  
+ 4 FP34        pre   R        L      female incl     23.1   164    53  
+ 5 FP23        pre   R        L      male   incl     24.8   176.   68.5
+ 6 FP26        pre   R        L      female excl     24.2   163    56  
+ 7 FP36        pre   L        R      female incl     20.5   158    60.5
+ 8 FP38        pre   R        L      female incl     20.6   181    83.5
+ 9 FP25        pre   R        L      male   incl     37.4   183    65  
+10 FP19        pre   L        R      male   incl     22.3   178.   73.5
+# ℹ 70 more rows
+# ℹ 2 more variables: lean.left_leg &lt;dbl&gt;, lean.right_leg &lt;dbl&gt;</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>exscidata<span class="sc">::</span>dxadata <span class="sc">|&gt;</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(weight, <span class="at">fp =</span> participant)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 80 × 2
+   weight fp   
+    &lt;dbl&gt; &lt;chr&gt;
+ 1   66.5 FP28 
+ 2   64   FP40 
+ 3   85   FP21 
+ 4   53   FP34 
+ 5   68.5 FP23 
+ 6   56   FP26 
+ 7   60.5 FP36 
+ 8   83.5 FP38 
+ 9   65   FP25 
+10   73.5 FP19 
+# ℹ 70 more rows</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Rename</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>exscidata<span class="sc">::</span>dxadata <span class="sc">|&gt;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(participant<span class="sc">:</span>weight) <span class="sc">|&gt;</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">kg =</span> weight) <span class="sc">|&gt;</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(kg, <span class="at">.before =</span> participant)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 80 × 9
+      kg participant time  multiple single sex    include   age height
+   &lt;dbl&gt; &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt;
+ 1  66.5 FP28        pre   L        R      female incl     24.5   170 
+ 2  64   FP40        pre   R        L      female incl     22.1   175 
+ 3  85   FP21        pre   R        L      male   incl     26.8   184 
+ 4  53   FP34        pre   R        L      female incl     23.1   164 
+ 5  68.5 FP23        pre   R        L      male   incl     24.8   176.
+ 6  56   FP26        pre   R        L      female excl     24.2   163 
+ 7  60.5 FP36        pre   L        R      female incl     20.5   158 
+ 8  83.5 FP38        pre   R        L      female incl     20.6   181 
+ 9  65   FP25        pre   R        L      male   incl     37.4   183 
+10  73.5 FP19        pre   L        R      male   incl     22.3   178.
+# ℹ 70 more rows</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Mutate</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>lean_mass <span class="ot">&lt;-</span> exscidata<span class="sc">::</span>dxadata <span class="sc">%&gt;%</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(participant<span class="sc">:</span>weight, lean.whole) <span class="sc">|&gt;</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rel_lean =</span> <span class="dv">100</span> <span class="sc">*</span> ((lean.whole<span class="sc">/</span><span class="dv">1000</span>)<span class="sc">/</span>weight),</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">anewvariable =</span> <span class="fu">rnorm</span>(<span class="dv">80</span>, <span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 80 × 12
+   participant time  multiple single sex    include   age height weight
+   &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+ 1 FP28        pre   L        R      female incl     24.5   170    66.5
+ 2 FP40        pre   R        L      female incl     22.1   175    64  
+ 3 FP21        pre   R        L      male   incl     26.8   184    85  
+ 4 FP34        pre   R        L      female incl     23.1   164    53  
+ 5 FP23        pre   R        L      male   incl     24.8   176.   68.5
+ 6 FP26        pre   R        L      female excl     24.2   163    56  
+ 7 FP36        pre   L        R      female incl     20.5   158    60.5
+ 8 FP38        pre   R        L      female incl     20.6   181    83.5
+ 9 FP25        pre   R        L      male   incl     37.4   183    65  
+10 FP19        pre   L        R      male   incl     22.3   178.   73.5
+# ℹ 70 more rows
+# ℹ 3 more variables: lean.whole &lt;dbl&gt;, rel_lean &lt;dbl&gt;, anewvariable &lt;dbl&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="pivot-data" class="level2">
+<h2 class="anchored" data-anchor-id="pivot-data">Pivot data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Create a small data set containing volume/leg information</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>leg_volume <span class="ot">&lt;-</span> exscidata<span class="sc">::</span>dxadata <span class="sc">|&gt;</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(participant, include, single, multiple) <span class="sc">|&gt;</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">names_to =</span> <span class="st">"volume"</span>,<span class="co">#</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">"leg"</span>,</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>               <span class="at">cols =</span> single<span class="sc">:</span>multiple) <span class="sc">|&gt;</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 160 × 4
+   participant include volume   leg  
+   &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;
+ 1 FP28        incl    single   R    
+ 2 FP28        incl    multiple L    
+ 3 FP40        incl    single   L    
+ 4 FP40        incl    multiple R    
+ 5 FP21        incl    single   L    
+ 6 FP21        incl    multiple R    
+ 7 FP34        incl    single   L    
+ 8 FP34        incl    multiple R    
+ 9 FP23        incl    single   L    
+10 FP23        incl    multiple R    
+# ℹ 150 more rows</code></pre>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
