@@ -25,7 +25,7 @@ library(tidyverse)
 library(exscidata)
 library(dplyr)
 
-remotes::install_github("dhammarstrom/exscidata") 
+remotes::install_github("dhammarstrom/exscidata")
 ```
 
 ```{r}
@@ -40,4 +40,13 @@ exscidata::dxadata |> select(participant)
 exscidata::dxadata |>
   lm(weight ~ height, data = _)
 
+```
+
+```{r}
+
+glimpse(exscidata::dxadata)
+
+## variablen finden
+exscidata::dxadata |>
+  select(participant:weight, starts_with("lean.") & contains("_leg"))
 ```
