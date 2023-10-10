@@ -8,4 +8,36 @@ editor_options:
 
 ## R Seminar
 
-ggplot: alles ist möglich
+git add . / git commit -m "bla" / git push
+
+ggplot: alles ist möglich, erst punkte, dann achsen, dann bezeichnungen
+
+in der top kann man bibliography haben
+
+VO~2max~
+
+This is a \[\^footnote\]
+
+\|\> is a pipe operator and means then do and takes the result of the previous thing as the first argument
+
+```{r}
+library(tidyverse)
+library(exscidata)
+library(dplyr)
+
+remotes::install_github("dhammarstrom/exscidata") 
+```
+
+```{r}
+dxadata <- data.frame(lean.mass = rnorm(100, 6000, 100))
+
+## Base R forward pipe operator
+
+exscidata::dxadata |> select(participant)
+
+## when they differ
+
+exscidata::dxadata |>
+  lm(weight ~ height, data = _)
+
+```
