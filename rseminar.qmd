@@ -1,0 +1,11 @@
+---
+title: "rseminar"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+## R Seminar
+
+ggplot: alles ist möglich
